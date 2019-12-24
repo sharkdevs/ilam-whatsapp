@@ -1,0 +1,38 @@
+{
+  "name": "ilam-prototype",
+  "version": "1.0.0",
+  "description": "This is a prototype to demonstrate the use of whatsapp for business",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "babel src/ -d dist",
+    "build": "babel src -d dist",
+    "start": "npm run build && node dist/app.js",
+    "start:dev": "npm run build:dev && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkdevs/ilam-whatsapp.git"
+  },
+  "keywords": [
+    "Whatsapp",
+    "business",
+    "chat"
+  ],
+  "author": "sharkdevs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sharkdevs/ilam-whatsapp/issues"
+  },
+  "homepage": "https://github.com/sharkdevs/ilam-whatsapp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "twilio": "^3.39.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "nodemon": "^2.0.2"
+  }
+}
