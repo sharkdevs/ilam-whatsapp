@@ -1,9 +1,8 @@
 import express from 'express';
+import router from './router/appRouter';
 
 const app = express();
-app.get('/', (req, res) => {
-    res.send('hello world')
-});
+app.use(router);
 app.listen(3000, () => {
-    console.log(`Server started on port 3000`);
+  console.log('Server started on port 3000');
 });

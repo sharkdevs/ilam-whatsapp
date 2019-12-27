@@ -8,7 +8,7 @@
     "build:dev": "babel src/ -d dist",
     "build": "babel src -d dist",
     "start": "npm run build && node dist/app.js",
-    "start:dev": "npm run build:dev && node dist/app.js"
+    "start:dev": "npm run build:dev && nodemon dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
+    "eslint": "^6.8.0",
     "nodemon": "^2.0.2"
   }
 }
